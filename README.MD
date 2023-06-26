@@ -39,6 +39,18 @@ How to use variable
 ami_id = var.ami_id
 ```
 
+### terraform.tfvars
+
+terraform.tfvars is a file with key value pairs. It is used to override the default values in variables usually. We can use this to supply values to multiple environments.
+
+### command line override
+
+We can supply values to terraform variables through command line using --var flag.
+
+```
+terraform apply -var="[variable-name]=[value]"
+```
+
 ### Count and Count Index
 
 When there is a requirement of creating a same kind of resource multiple times you can use count and count index paramaters instead of creating the same resource multiple times.
